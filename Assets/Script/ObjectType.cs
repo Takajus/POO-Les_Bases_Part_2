@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InGameObject : MonoBehaviour
+public enum ObjectType
 {
-
+    NONE,
+    CHARACTER,
+    EQUIPMENT,
 }

@@ -75,7 +75,7 @@ public class Generator : MonoBehaviour
             
             characterList.Add(character);
         }
-        LogCharacterStat();
+
         GameManager.Instance.ChangeInventoryForCharacter();
     }
 
@@ -87,19 +87,14 @@ public class Generator : MonoBehaviour
         }
     }
 
-    private void LogCharacterStat()
+    public void LogCharacterStat()
     {        
         for (int i = characterList.Count - 1; i >= 0; i--)
         {
             Debug.Log(characterList[i]);
-            Debug.Log("Name :" + characterList[i].stat.name);
-            Debug.Log("Hp :" + characterList[i].stat.hp);
-            Debug.Log("Stamina :" + characterList[i].stat.stamina);
-            Debug.Log("Attack :" + characterList[i].stat.attack);
-            Debug.Log("Defence :" + characterList[i].stat.defense);
-            Debug.Log("Speed :" + characterList[i].stat.speed);
+            Debug.Log("Name :" + characterList[i].stat.name + ". Hp :" + characterList[i].stat.hp + ". Stamina :" + characterList[i].stat.stamina + ". Attack :" + characterList[i].stat.attack + ". Defence :" + characterList[i].stat.defense + ". Speed :" + characterList[i].stat.speed);
         }
-        Debug.Log(characterList.Count);
+        //Debug.Log(characterList.Count);
     }
 
     //--------------------------------------------//
@@ -152,7 +147,7 @@ public class Generator : MonoBehaviour
 
             equipmentList.Add(equipment);
         }
-        LogEquipmentStat();
+
         GameManager.Instance.ChangeInventoryForEquipment();
     }
 
@@ -164,18 +159,14 @@ public class Generator : MonoBehaviour
         }
     }
 
-    private void LogEquipmentStat()
+    public void LogEquipmentStat()
     {
         for (int i = equipmentList.Count - 1; i >= 0; i--)
         {
             Debug.Log(equipmentList[i]);
-            Debug.Log("Name :" + equipmentList[i].stat.name);
-            Debug.Log("Market Value :" + equipmentList[i].stat.marketValue);
-            Debug.Log("Attack Power :" + equipmentList[i].stat.attackPower);
-            Debug.Log("Defence Power :" + equipmentList[i].stat.defensePower);
-
+            Debug.Log("Name :" + equipmentList[i].stat.name +". Market Value :" + equipmentList[i].stat.marketValue + ". Attack Power :" + equipmentList[i].stat.attackPower + ". Defence Power :" + equipmentList[i].stat.defensePower);
         }
-        Debug.Log(equipmentList.Count);
+        //Debug.Log(equipmentList.Count);
     }
 
 }
