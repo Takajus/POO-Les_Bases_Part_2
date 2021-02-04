@@ -6,6 +6,6 @@ public class Plastron : Defensive
 {
     public Plastron(StatEquipment stat) : base(stat)
     {
-
+        sprite = Resources.Load<Sprite>("Pictures/Plastron");
     }
 }

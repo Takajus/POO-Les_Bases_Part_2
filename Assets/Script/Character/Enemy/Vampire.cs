@@ -6,6 +6,6 @@ public class Vampire : Enemy
 {
     public Vampire(StatCharacter stat) : base(stat)
     {
-        
+        sprite = Resources.Load<Sprite>("Pictures/Vampire");
     }
 }

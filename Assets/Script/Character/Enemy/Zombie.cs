@@ -6,6 +6,6 @@ public class Zombie : Enemy
 {
     public Zombie(StatCharacter stat) : base(stat)
     {
-
+        sprite = Resources.Load<Sprite>("Pictures/Zombie");
     }
 }

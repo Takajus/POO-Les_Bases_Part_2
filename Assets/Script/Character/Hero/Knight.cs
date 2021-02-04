@@ -6,6 +6,6 @@ public class Knight : Hero
 {
     public Knight(StatCharacter stat) : base(stat)
     {
-
+        sprite = Resources.Load<Sprite>("Pictures/Knight");
     }
 }

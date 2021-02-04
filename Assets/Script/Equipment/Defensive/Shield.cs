@@ -6,6 +6,6 @@ public class Shield : Defensive
 {
     public Shield(StatEquipment stat) : base(stat)
     {
-
+        sprite = Resources.Load<Sprite>("Pictures/Shield");
     }
 }

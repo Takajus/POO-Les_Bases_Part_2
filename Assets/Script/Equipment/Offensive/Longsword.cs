@@ -6,6 +6,6 @@ public class Longsword : Offensive
 {
     public Longsword(StatEquipment stat): base(stat)
     {
-
+        sprite = Resources.Load<Sprite>("Pictures/LongSword");
     }
 }

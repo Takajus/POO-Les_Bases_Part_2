@@ -6,6 +6,6 @@ public class Paladin : Hero
 {
     public Paladin(StatCharacter stat) : base(stat)
     {
-
+        sprite = Resources.Load<Sprite>("Pictures/Paladin");
     }
 }

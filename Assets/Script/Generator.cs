@@ -5,32 +5,32 @@ using UnityEngine;
 public class Generator : MonoBehaviour
 {
     //Private
-    static private Generator _instance = null;
+    private static Generator _instance = null;
 
-    private List<Character> charaterList = new List<Character>();
-    private List<Equipment> equipmentList = new List<Equipment>();
+    public List<Character> characterList { get; private set; } = new List<Character>();
+    public List<Equipment> equipmentList { get; private set; } = new List<Equipment>();
 
 
     private Generator()
     {
     }
 
-    public static Generator GetInstance()
+    public static Generator Instance
     {
-        if(_instance == null)
-        {
-            _instance = new Generator();
-        }
-        return _instance;
+        get => _instance;
     }
 
+    private void Awake()
+    {
+        _instance = this;
+    }
 
     //--------------------------------------------//
     //--------------Part Character----------------//
     //--------------------------------------------//
     public void GenerateCharacter()
     {
-        if (charaterList.Count != 0)
+        if (characterList.Count != 0)
         {
             ClearCharacterList();
         }
@@ -73,26 +73,27 @@ public class Generator : MonoBehaviour
                 }
             }
             
-            charaterList.Add(character);
+            characterList.Add(character);
         }
         LogCharacterStat();
+        GameManager.Instance.ChangeInventoryForCharacter();
     }
 
     public void ClearCharacterList()
     {
-        for (int i = charaterList.Count - 1; i >= 0; i--)
+        for (int i = characterList.Count - 1; i >= 0; i--)
         {
-            charaterList.RemoveAt(i);
+            characterList.RemoveAt(i);
         }
     }
 
     private void LogCharacterStat()
     {        
-        for (int i = charaterList.Count - 1; i >= 0; i--)
+        for (int i = characterList.Count - 1; i >= 0; i--)
         {
-            Debug.Log(charaterList[i]);
+            Debug.Log(characterList[i]);
         }
-        Debug.Log(charaterList.Count);
+        Debug.Log(characterList.Count);
     }
 
     //--------------------------------------------//
