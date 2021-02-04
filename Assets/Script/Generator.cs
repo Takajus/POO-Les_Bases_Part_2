@@ -46,30 +46,30 @@ public class Generator : MonoBehaviour
             {
                 if (randClass == 0)
                 {
-                    character = new Paladin(new StatCharacter("Link", 1000, 500, 9, 50, 600));
+                    character = new Paladin(new StatCharacter("Link"));
                 }
                 else if (randClass == 1)
                 {
-                    character = new Knight(new StatCharacter("Arthur", 100, 700, 100, 30, 630));
+                    character = new Knight(new StatCharacter("Arthur"));
                 }
                 else if (randClass == 2)
                 {
-                    character = new Rogue(new StatCharacter("John", 30, 1000, 40, 5, 1000));
+                    character = new Rogue(new StatCharacter("John"));
                 }
             }
             else if (randType == 1)
             {
                 if (randClass == 0)
                 {
-                    character = new Zombie(new StatCharacter("Joseph", 50, -1, 20, 10, 200));
+                    character = new Zombie(new StatCharacter("Joseph"));
                 }
                 else if (randClass == 1)
                 {
-                    character = new Skeleton(new StatCharacter("Sans", 25, -1, 30, 1, 300));
+                    character = new Skeleton(new StatCharacter("Sans"));
                 }
                 else if (randClass == 2)
                 {
-                    character = new Vampire(new StatCharacter("Alva", 500, 550, 70, 60, 400));
+                    character = new Vampire(new StatCharacter("Alva"));
                 }
             }
             
@@ -92,6 +92,12 @@ public class Generator : MonoBehaviour
         for (int i = characterList.Count - 1; i >= 0; i--)
         {
             Debug.Log(characterList[i]);
+            Debug.Log("Name :" + characterList[i].stat.name);
+            Debug.Log("Hp :" + characterList[i].stat.hp);
+            Debug.Log("Stamina :" + characterList[i].stat.stamina);
+            Debug.Log("Attack :" + characterList[i].stat.attack);
+            Debug.Log("Defence :" + characterList[i].stat.defense);
+            Debug.Log("Speed :" + characterList[i].stat.speed);
         }
         Debug.Log(characterList.Count);
     }
@@ -117,30 +123,30 @@ public class Generator : MonoBehaviour
             {
                 if (randClass == 0)
                 {
-                    equipment = new Dagger(new StatEquipment("Poisonous Dagger", 200, 200, 10));
+                    equipment = new Dagger(new StatEquipment("Poisonous Dagger"));
                 }
                 else if (randClass == 1)
                 {
-                    equipment = new Longsword(new StatEquipment("Escalibur", 500, 400, 60));
+                    equipment = new Longsword(new StatEquipment("Escalibur"));
                 }
                 else if (randClass == 2)
                 {
-                    equipment = new Spear(new StatEquipment("Divin Spear", 400, 300, 50));
+                    equipment = new Spear(new StatEquipment("Divin Spear"));
                 }
             }
             else if (randType == 1)
             {
                 if (randClass == 0)
                 {
-                    equipment = new Helmet(new StatEquipment("Spartan Helmet", 600, 0, 100));
+                    equipment = new Helmet(new StatEquipment("Spartan Helmet"));
                 }
                 else if (randClass == 1)
                 {
-                    equipment = new Plastron(new StatEquipment("Turtle Shell", 800, 0, 200));
+                    equipment = new Plastron(new StatEquipment("Turtle Shell"));
                 }
                 else if (randClass == 2)
                 {
-                    equipment = new Shield(new StatEquipment("Wall of Insanity", 1000, 50, 150));
+                    equipment = new Shield(new StatEquipment("Wall of Insanity"));
                 }
             }
 
@@ -163,6 +169,11 @@ public class Generator : MonoBehaviour
         for (int i = equipmentList.Count - 1; i >= 0; i--)
         {
             Debug.Log(equipmentList[i]);
+            Debug.Log("Name :" + equipmentList[i].stat.name);
+            Debug.Log("Market Value :" + equipmentList[i].stat.marketValue);
+            Debug.Log("Attack Power :" + equipmentList[i].stat.attackPower);
+            Debug.Log("Defence Power :" + equipmentList[i].stat.defensePower);
+
         }
         Debug.Log(equipmentList.Count);
     }

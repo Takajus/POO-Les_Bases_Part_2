@@ -9,11 +9,11 @@ public struct StatEquipment
     public int attackPower;
     public int defensePower;
 
-    public StatEquipment(string name, int marketValue = 100, int attackPower = 10, int defensePower = 20)
+    public StatEquipment(string name)
     {
         this.name = name;
-        this.marketValue = marketValue;
-        this.attackPower = attackPower;
-        this.defensePower = defensePower;
+        this.marketValue = Random.Range(100, 801);
+        this.attackPower = Random.Range(5, 21);
+        this.defensePower = Random.Range(5, 21);
     }
 }

@@ -11,13 +11,13 @@ public struct StatCharacter
     public int defense;
     public int speed;
 
-    public StatCharacter(string name, int hp = 100, int stamina = 40, int attack = 10, int defense = 15, int speed = 90)
+    public StatCharacter(string name)
     {
         this.name = name;
-        this.hp = hp;
-        this.stamina = stamina;
-        this.attack = attack;
-        this.defense = defense;
-        this.speed = speed;
+        this.hp = Random.Range(50, 151);
+        this.stamina = Random.Range(80, 121);
+        this.attack = Random.Range(20, 61);
+        this.defense = Random.Range(10, 21);
+        this.speed = Random.Range(10, 31);
     }
 }
