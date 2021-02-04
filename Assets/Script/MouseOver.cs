@@ -27,8 +27,8 @@ public class MouseOver : MonoBehaviour
                 currentStatMenu = Instantiate(StatMenuPrefab, canvas.transform);
                 currentStatMenu.transform.GetChild(0).GetComponent<Text>().text = (currentCharacter.stat.name + "\n"
                                                                                    + "HP : " + currentCharacter.stat.hp + "\n"
-                                                                                   + "Stamina :" + currentCharacter.stat.stamina + "\n"
-                                                                                   + "Attack :" + currentCharacter.stat.attack + "\n"
+                                                                                   + "Stamina : " + currentCharacter.stat.stamina + "\n"
+                                                                                   + "Attack : " + currentCharacter.stat.attack + "\n"
                                                                                    + "Defence : " + currentCharacter.stat.defense + "\n"
                                                                                    + "Speed : " + currentCharacter.stat.speed).ToString(); 
                 //Generator.Instance.LogCharacterStat();
