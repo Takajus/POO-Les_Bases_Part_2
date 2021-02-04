@@ -147,6 +147,7 @@ public class Generator : MonoBehaviour
             equipmentList.Add(equipment);
         }
         LogEquipmentStat();
+        GameManager.Instance.ChangeInventoryForEquipment();
     }
 
     private void ClearEquipmentList()

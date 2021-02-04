@@ -34,4 +34,12 @@ public class GameManager : MonoBehaviour
         }
 
     }
+    public void ChangeInventoryForEquipment()
+    {
+        for (int i = 0; i < inventoryObject.Length; i++)
+        {
+            inventoryObject[i].GetComponent<SpriteRenderer>().sprite = Generator.Instance.equipmentList[i].sprite;
+        }
+
+    }
 }

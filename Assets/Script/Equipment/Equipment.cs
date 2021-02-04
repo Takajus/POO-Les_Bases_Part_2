@@ -5,7 +5,6 @@ using UnityEngine;
 public class Equipment
 {
     public Sprite sprite { get; protected set; }
-
     public StatEquipment stat { get; protected set; }
 
     public Equipment(StatEquipment stat)
