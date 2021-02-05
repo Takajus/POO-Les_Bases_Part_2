@@ -6,7 +6,7 @@ public class Plastron : Defensive
 {
     public Plastron(StatEquipment stat) : base(stat)
     {
-        sprite = Resources.Load<Sprite>("Pictures/Plastron");
+        Sprite = Resources.Load<Sprite>("Pictures/Plastron");
     }
     public override string GetDescription()
     {

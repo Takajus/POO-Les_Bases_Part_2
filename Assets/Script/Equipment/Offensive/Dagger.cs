@@ -6,7 +6,7 @@ public class Dagger : Offensive
 {
     public Dagger(StatEquipment stat) : base(stat)
     {
-        sprite = Resources.Load<Sprite>("Pictures/Dagger");
+        Sprite = Resources.Load<Sprite>("Pictures/Dagger");
     }
     public override string GetDescription()
     {

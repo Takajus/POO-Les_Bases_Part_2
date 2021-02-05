@@ -6,7 +6,7 @@ public class Spear : Offensive
 {
     public Spear(StatEquipment stat) : base(stat)
     {
-        sprite = Resources.Load<Sprite>("Pictures/Spear");
+        Sprite = Resources.Load<Sprite>("Pictures/Spear");
     }
     public override string GetDescription()
     {

@@ -451,6 +451,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 457355159}
     - target: {fileID: 166246478, guid: 6ff221ed93c6e15448c92f6f65c4b1f0, type: 3}
+      propertyPath: _canvas
+      value: 
+      objectReference: {fileID: 457355159}
+    - target: {fileID: 166246478, guid: 6ff221ed93c6e15448c92f6f65c4b1f0, type: 3}
       propertyPath: StatMenuPrefab
       value: 
       objectReference: {fileID: 4128396188814435242, guid: 0834471a524fa1248ae5216354f1322a,
@@ -912,6 +916,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4149658518419468123, guid: 2abd2c4affdb6b54d811efff0413fb39,
         type: 3}
+      propertyPath: _inventoryObject.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149658518419468123, guid: 2abd2c4affdb6b54d811efff0413fb39,
+        type: 3}
       propertyPath: inventoryObject.Array.data[0]
       value: 
       objectReference: {fileID: 421633420}
@@ -923,6 +932,21 @@ PrefabInstance:
     - target: {fileID: 4149658518419468123, guid: 2abd2c4affdb6b54d811efff0413fb39,
         type: 3}
       propertyPath: inventoryObject.Array.data[2]
+      value: 
+      objectReference: {fileID: 217331939}
+    - target: {fileID: 4149658518419468123, guid: 2abd2c4affdb6b54d811efff0413fb39,
+        type: 3}
+      propertyPath: _inventoryObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 421633420}
+    - target: {fileID: 4149658518419468123, guid: 2abd2c4affdb6b54d811efff0413fb39,
+        type: 3}
+      propertyPath: _inventoryObject.Array.data[1]
+      value: 
+      objectReference: {fileID: 166246477}
+    - target: {fileID: 4149658518419468123, guid: 2abd2c4affdb6b54d811efff0413fb39,
+        type: 3}
+      propertyPath: _inventoryObject.Array.data[2]
       value: 
       objectReference: {fileID: 217331939}
     - target: {fileID: 6318804352237101427, guid: 2abd2c4affdb6b54d811efff0413fb39,
@@ -996,6 +1020,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 166246478, guid: 6ff221ed93c6e15448c92f6f65c4b1f0, type: 3}
       propertyPath: canvas
+      value: 
+      objectReference: {fileID: 457355159}
+    - target: {fileID: 166246478, guid: 6ff221ed93c6e15448c92f6f65c4b1f0, type: 3}
+      propertyPath: _canvas
       value: 
       objectReference: {fileID: 457355159}
     - target: {fileID: 166246478, guid: 6ff221ed93c6e15448c92f6f65c4b1f0, type: 3}
@@ -1074,6 +1102,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 166246478, guid: 6ff221ed93c6e15448c92f6f65c4b1f0, type: 3}
       propertyPath: canvas
+      value: 
+      objectReference: {fileID: 457355159}
+    - target: {fileID: 166246478, guid: 6ff221ed93c6e15448c92f6f65c4b1f0, type: 3}
+      propertyPath: _canvas
       value: 
       objectReference: {fileID: 457355159}
     - target: {fileID: 166246478, guid: 6ff221ed93c6e15448c92f6f65c4b1f0, type: 3}
