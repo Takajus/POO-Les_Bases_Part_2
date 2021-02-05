@@ -8,9 +8,9 @@ public class Knight : Hero
     {
         sprite = Resources.Load<Sprite>("Pictures/Knight");
     }
-    public override void SaySomthing()
+    public override string GetDialogueLine()
     {
-        base.SaySomthing();
-        Debug.Log("LEEROYYYYYYYYY JENKINS !!");
+        base.GetDialogueLine();
+        return "LEEROYYYYYYYYY JENKINS !!";
     }
 }

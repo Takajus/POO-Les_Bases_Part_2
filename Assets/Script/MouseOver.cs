@@ -6,10 +6,13 @@ using UnityEngine.UI;
 public class MouseOver : MonoBehaviour
 {
     [SerializeField]
+    private GameObject OnClickTextPrefab;
+    [SerializeField]
     private GameObject StatMenuPrefab;
     [SerializeField]
     private Canvas canvas;
     private GameObject currentStatMenu;
+    private GameObject currentOnClickText;
 
     private bool IsMouseOver = false;
 
@@ -47,14 +50,23 @@ public class MouseOver : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (currentOnClickText != null)
+        {
+            Destroy(currentOnClickText);
+        }
+
         if (currentType == ObjectType.CHARACTER)
         {
-            currentCharacter.SaySomthing();
+            currentOnClickText = Instantiate(OnClickTextPrefab, canvas.transform);
+            currentOnClickText.transform.GetComponent<Text>().text = currentCharacter.GetDialogueLine();
         }
         else if (currentType == ObjectType.EQUIPMENT)
         {
-            currentEquipment.ReadDescription();
+            currentOnClickText = Instantiate(OnClickTextPrefab, canvas.transform);
+            currentOnClickText.transform.GetComponent<Text>().text = currentEquipment.GetDescription();
         }
+
+        Destroy(currentOnClickText, 2.0F);
     }
 
 
@@ -62,6 +74,7 @@ public class MouseOver : MonoBehaviour
     {
         IsMouseOver = false;
         Destroy(currentStatMenu);
+        Destroy(currentOnClickText);
         //Debug.Log("Mouse Exit");
     }
 

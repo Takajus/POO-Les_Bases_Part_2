@@ -8,9 +8,9 @@ public class Zombie : Enemy
     {
         sprite = Resources.Load<Sprite>("Pictures/Zombie");
     }
-    public override void SaySomthing()
+    public override string GetDialogueLine()
     {
-        base.SaySomthing();
-        Debug.Log("Grrrrrrr");
+        base.GetDialogueLine();
+        return "Grrrrrrr";
     }
 }

@@ -95,6 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9169fa2833a67014dbe40a4aff1ee79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnClickTextPrefab: {fileID: 4388201973342872842, guid: 0d1774b59c2f1ac4ba9559bf9dc37d88,
+    type: 3}
   StatMenuPrefab: {fileID: 4128396188814435242, guid: 0834471a524fa1248ae5216354f1322a,
     type: 3}
   canvas: {fileID: 0}

@@ -8,9 +8,9 @@ public class Shield : Defensive
     {
         sprite = Resources.Load<Sprite>("Pictures/Shield");
     }
-    public override void ReadDescription()
+    public override string GetDescription()
     {
-        base.ReadDescription();
-        Debug.Log("Wait you never saw a shield !?");
+        base.GetDescription();
+        return "Wait you never saw a shield !?";
     }
 }

@@ -8,9 +8,9 @@ public class Plastron : Defensive
     {
         sprite = Resources.Load<Sprite>("Pictures/Plastron");
     }
-    public override void ReadDescription()
+    public override string GetDescription()
     {
-        base.ReadDescription();
-        Debug.Log("Mincraft Plastron");
+        base.GetDescription();
+       return "Mincraft Plastron";
     }
 }

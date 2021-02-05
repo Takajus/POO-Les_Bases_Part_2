@@ -8,9 +8,9 @@ public class Dagger : Offensive
     {
         sprite = Resources.Load<Sprite>("Pictures/Dagger");
     }
-    public override void ReadDescription()
+    public override string GetDescription()
     {
-        base.ReadDescription();
-        Debug.Log("A tiny litle Blade");
+        base.GetDescription();
+        return "A tiny litle Blade";
     }
 }

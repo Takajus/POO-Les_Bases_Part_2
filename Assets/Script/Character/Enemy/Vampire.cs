@@ -8,9 +8,9 @@ public class Vampire : Enemy
     {
         sprite = Resources.Load<Sprite>("Pictures/Vampire");
     }
-    public override void SaySomthing()
+    public override string GetDialogueLine()
     {
-        base.SaySomthing();
-        Debug.Log("Your blood smells good.");
+        base.GetDialogueLine();
+        return "Your blood smells good.";
     }
 }

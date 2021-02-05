@@ -9,9 +9,9 @@ public class Rogue : Hero
         sprite = Resources.Load<Sprite>("Pictures/Rogue");
     }
 
-    public override void SaySomthing()
+    public override string GetDialogueLine()
     {
-        base.SaySomthing();
-        Debug.Log("I have already steal your money.");
+        base.GetDialogueLine();
+        return "I have already steal your money.";
     }
 }

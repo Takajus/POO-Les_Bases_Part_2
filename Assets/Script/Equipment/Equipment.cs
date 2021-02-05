@@ -12,8 +12,8 @@ public class Equipment
         this.stat = stat;
         sprite = null;
     }
-    public virtual void ReadDescription()
+    public virtual string GetDescription()
     {
-
+        return "nothing";
     }
 }

@@ -8,9 +8,9 @@ public class Paladin : Hero
     {
         sprite = Resources.Load<Sprite>("Pictures/Paladin");
     }
-    public override void SaySomthing()
+    public override string GetDialogueLine()
     {
-        base.SaySomthing();
-        Debug.Log("I will pray for you !");
+        base.GetDialogueLine();
+        return "I will pray for you !";
     }
 }

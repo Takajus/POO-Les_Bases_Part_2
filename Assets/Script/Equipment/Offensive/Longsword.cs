@@ -8,9 +8,9 @@ public class Longsword : Offensive
     {
         sprite = Resources.Load<Sprite>("Pictures/LongSword");
     }
-    public override void ReadDescription()
+    public override string GetDescription()
     {
-        base.ReadDescription();
-        Debug.Log("A big big sword");
+        base.GetDescription();
+        return "A big big sword";
     }
 }

@@ -12,8 +12,8 @@ public class Character
         this.stat = stat;
         sprite = null;
     }
-    public virtual void SaySomthing()
+    public virtual string GetDialogueLine()
     {
-
+        return "nothing";
     }
 }

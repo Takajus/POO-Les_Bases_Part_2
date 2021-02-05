@@ -8,9 +8,9 @@ public class Spear : Offensive
     {
         sprite = Resources.Load<Sprite>("Pictures/Spear");
     }
-    public override void ReadDescription()
+    public override string GetDescription()
     {
-        base.ReadDescription();
-        Debug.Log("Juste a long stick with a blade.");
+        base.GetDescription();
+        return "Juste a long stick with a blade";
     }
 }
