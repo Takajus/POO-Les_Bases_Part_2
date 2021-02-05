@@ -8,4 +8,9 @@ public class Vampire : Enemy
     {
         sprite = Resources.Load<Sprite>("Pictures/Vampire");
     }
+    public override void SaySomthing()
+    {
+        base.SaySomthing();
+        Debug.Log("Your blood smells good.");
+    }
 }

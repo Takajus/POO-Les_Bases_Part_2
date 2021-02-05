@@ -8,4 +8,9 @@ public class Knight : Hero
     {
         sprite = Resources.Load<Sprite>("Pictures/Knight");
     }
+    public override void SaySomthing()
+    {
+        base.SaySomthing();
+        Debug.Log("LEEROYYYYYYYYY JENKINS !!");
+    }
 }

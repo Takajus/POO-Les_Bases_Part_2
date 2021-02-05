@@ -45,12 +45,24 @@ public class MouseOver : MonoBehaviour
         }
     }
 
+    private void OnMouseDown()
+    {
+        if (currentType == ObjectType.CHARACTER)
+        {
+            currentCharacter.SaySomthing();
+        }
+        else if (currentType == ObjectType.EQUIPMENT)
+        {
+            currentEquipment.ReadDescription();
+        }
+    }
+
 
     private void OnMouseExit()
     {
         IsMouseOver = false;
         Destroy(currentStatMenu);
-        Debug.Log("Mouse Exit");
+        //Debug.Log("Mouse Exit");
     }
 
 }

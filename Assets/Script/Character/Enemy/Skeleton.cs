@@ -8,4 +8,9 @@ public class Skeleton : Enemy
     {
         sprite = Resources.Load<Sprite>("Pictures/Skeleton");
     }
+    public override void SaySomthing()
+    {
+        base.SaySomthing();
+        Debug.Log("You feel like you're going to have a bad time.");
+    }
 }

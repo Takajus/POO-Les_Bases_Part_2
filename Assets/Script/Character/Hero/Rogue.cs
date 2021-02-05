@@ -8,4 +8,10 @@ public class Rogue : Hero
     {
         sprite = Resources.Load<Sprite>("Pictures/Rogue");
     }
+
+    public override void SaySomthing()
+    {
+        base.SaySomthing();
+        Debug.Log("I have already steal your money.");
+    }
 }

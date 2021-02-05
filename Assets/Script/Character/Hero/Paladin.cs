@@ -8,4 +8,9 @@ public class Paladin : Hero
     {
         sprite = Resources.Load<Sprite>("Pictures/Paladin");
     }
+    public override void SaySomthing()
+    {
+        base.SaySomthing();
+        Debug.Log("I will prey for you !");
+    }
 }

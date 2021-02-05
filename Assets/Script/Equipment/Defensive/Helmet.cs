@@ -8,4 +8,9 @@ public class Helmet : Defensive
     {
         sprite = Resources.Load<Sprite>("Pictures/Helmet");
     }
+    public override void ReadDescription()
+    {
+        base.ReadDescription();
+        Debug.Log("A hat but in steel");
+    }
 }

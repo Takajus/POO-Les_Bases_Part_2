@@ -12,9 +12,8 @@ public class Character
         this.stat = stat;
         sprite = null;
     }
-    
-    ~Character()
+    public virtual void SaySomthing()
     {
-        Debug.Log("Character Destroy!!!");
+
     }
 }

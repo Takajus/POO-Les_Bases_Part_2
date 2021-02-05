@@ -12,9 +12,8 @@ public class Equipment
         this.stat = stat;
         sprite = null;
     }
-
-    ~Equipment()
+    public virtual void ReadDescription()
     {
-        Debug.Log("Equipment Destroy!!!");
+
     }
 }
