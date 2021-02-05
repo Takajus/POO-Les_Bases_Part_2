@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Enemy">
+    <Position X="8.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Character\Enemy\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skeleton">
+    <Position X="6.25" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Character\Enemy\Skeleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vampire">
+    <Position X="8.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Character\Enemy\Vampire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zombie">
+    <Position X="10.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Character\Enemy\Zombie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hero">
+    <Position X="15.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Character\Hero\Hero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Paladin">
+    <Position X="13" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Character\Hero\Paladin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Knight">
+    <Position X="15.25" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Character\Hero\Knight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rogue">
+    <Position X="17.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Character\Hero\Rogue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Character">
+    <Position X="11.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAgAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Character\Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Defensive">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Equipment\Defensive\Defensive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plastron">
+    <Position X="6.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Equipment\Defensive\Plastron.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helmet">
+    <Position X="8.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Equipment\Defensive\Helmet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shield">
+    <Position X="10.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Equipment\Defensive\Shield.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dagger">
+    <Position X="17.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Equipment\Offensive\Dagger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Longsword">
+    <Position X="13" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Equipment\Offensive\Longsword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Offensive">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Equipment\Offensive\Offensive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spear">
+    <Position X="15.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Equipment\Offensive\Spear.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Equipment">
+    <Position X="11.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAABAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Equipment\Equipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generator">
+    <Position X="21.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAgAAAAAACAADAEAAEAAAAAAAAAIUAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Script\Generator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameManager">
+    <Position X="20" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEBACAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAFA=</HashCode>
+      <FileName>Assets\Script\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MouseOver">
+    <Position X="23.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAKQAAAAAAAAAAAABAAADEAACAAAQIAAAAAEQAAA=</HashCode>
+      <FileName>Assets\Script\MouseOver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="StatCharacter" Collapsed="true">
+    <Position X="20" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAEAQCAAABAAAAAAAI=</HashCode>
+      <FileName>Assets\Script\Character\StatCharacter.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="StatEquipment">
+    <Position X="25.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAEAAAAAAAACAgAAAA=</HashCode>
+      <FileName>Assets\Script\Equipment\StatEquipment.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="ObjectType">
+    <Position X="27" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAQAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\ObjectType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
