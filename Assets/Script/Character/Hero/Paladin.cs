@@ -11,6 +11,6 @@ public class Paladin : Hero
     public override void SaySomthing()
     {
         base.SaySomthing();
-        Debug.Log("I will prey for you !");
+        Debug.Log("I will pray for you !");
     }
 }
