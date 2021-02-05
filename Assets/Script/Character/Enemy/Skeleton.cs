@@ -6,7 +6,7 @@ public class Skeleton : Enemy
 {
     public Skeleton(StatCharacter stat) : base(stat)
     {
-        sprite = Resources.Load<Sprite>("Pictures/Skeleton");
+        Sprite = Resources.Load<Sprite>("Pictures/Skeleton");
     }
     public override string GetDialogueLine()
     {

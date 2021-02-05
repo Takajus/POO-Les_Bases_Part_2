@@ -7,8 +7,8 @@ public class Generator : MonoBehaviour
     //Private
     private static Generator _instance = null;
 
-    public List<Character> characterList { get; private set; } = new List<Character>();
-    public List<Equipment> equipmentList { get; private set; } = new List<Equipment>();
+    public List<Character> CharacterList { get; private set; } = new List<Character>();
+    public List<Equipment> EquipmentList { get; private set; } = new List<Equipment>();
 
 
     private Generator()
@@ -30,7 +30,7 @@ public class Generator : MonoBehaviour
     //--------------------------------------------//
     public void GenerateCharacter()
     {
-        if (characterList.Count != 0)
+        if (CharacterList.Count != 0)
         {
             ClearCharacterList();
         }
@@ -73,7 +73,7 @@ public class Generator : MonoBehaviour
                 }
             }
             
-            characterList.Add(character);
+            CharacterList.Add(character);
         }
 
         GameManager.Instance.ChangeInventoryForCharacter();
@@ -81,18 +81,18 @@ public class Generator : MonoBehaviour
 
     public void ClearCharacterList()
     {
-        for (int i = characterList.Count - 1; i >= 0; i--)
+        for (int i = CharacterList.Count - 1; i >= 0; i--)
         {
-            characterList.RemoveAt(i);
+            CharacterList.RemoveAt(i);
         }
     }
 
     public void LogCharacterStat()
     {        
-        for (int i = characterList.Count - 1; i >= 0; i--)
+        for (int i = CharacterList.Count - 1; i >= 0; i--)
         {
-            Debug.Log(characterList[i]);
-            Debug.Log("Name :" + characterList[i].stat.name + ". Hp :" + characterList[i].stat.hp + ". Stamina :" + characterList[i].stat.stamina + ". Attack :" + characterList[i].stat.attack + ". Defence :" + characterList[i].stat.defense + ". Speed :" + characterList[i].stat.speed);
+            Debug.Log(CharacterList[i]);
+            Debug.Log("Name :" + CharacterList[i].Stat.name + ". Hp :" + CharacterList[i].Stat.hp + ". Stamina :" + CharacterList[i].Stat.stamina + ". Attack :" + CharacterList[i].Stat.attack + ". Defence :" + CharacterList[i].Stat.defense + ". Speed :" + CharacterList[i].Stat.speed);
         }
         //Debug.Log(characterList.Count);
     }
@@ -102,7 +102,7 @@ public class Generator : MonoBehaviour
     //--------------------------------------------//
     public void GenerateEquipment()
     {
-        if (equipmentList.Count != 0)
+        if (EquipmentList.Count != 0)
         {
             ClearEquipmentList();
         }
@@ -145,7 +145,7 @@ public class Generator : MonoBehaviour
                 }
             }
 
-            equipmentList.Add(equipment);
+            EquipmentList.Add(equipment);
         }
 
         GameManager.Instance.ChangeInventoryForEquipment();
@@ -153,20 +153,19 @@ public class Generator : MonoBehaviour
 
     private void ClearEquipmentList()
     {
-        for (int i = equipmentList.Count - 1; i >= 0; i--)
+        for (int i = EquipmentList.Count - 1; i >= 0; i--)
         {
-            equipmentList.RemoveAt(i);
+            EquipmentList.RemoveAt(i);
         }
     }
 
     public void LogEquipmentStat()
     {
-        for (int i = equipmentList.Count - 1; i >= 0; i--)
+        for (int i = EquipmentList.Count - 1; i >= 0; i--)
         {
-            Debug.Log(equipmentList[i]);
-            Debug.Log("Name :" + equipmentList[i].stat.name +". Market Value :" + equipmentList[i].stat.marketValue + ". Attack Power :" + equipmentList[i].stat.attackPower + ". Defence Power :" + equipmentList[i].stat.defensePower);
+            Debug.Log(EquipmentList[i]);
+            Debug.Log("Name :" + EquipmentList[i].Stat.name +". Market Value :" + EquipmentList[i].Stat.marketValue + ". Attack Power :" + EquipmentList[i].Stat.attackPower + ". Defence Power :" + EquipmentList[i].Stat.defensePower);
         }
         //Debug.Log(equipmentList.Count);
     }
-
 }

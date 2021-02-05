@@ -6,7 +6,7 @@ public class Paladin : Hero
 {
     public Paladin(StatCharacter stat) : base(stat)
     {
-        sprite = Resources.Load<Sprite>("Pictures/Paladin");
+        Sprite = Resources.Load<Sprite>("Pictures/Paladin");
     }
     public override string GetDialogueLine()
     {

@@ -147,8 +147,8 @@
       <FileName>Assets\Script\MouseOver.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Struct Name="StatCharacter" Collapsed="true">
-    <Position X="20" Y="3" Width="1.5" />
+  <Struct Name="StatCharacter">
+    <Position X="25.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAEAQCAAABAAAAAAAI=</HashCode>
       <FileName>Assets\Script\Character\StatCharacter.cs</FileName>

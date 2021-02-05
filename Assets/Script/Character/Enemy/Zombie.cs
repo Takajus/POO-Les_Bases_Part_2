@@ -6,7 +6,7 @@ public class Zombie : Enemy
 {
     public Zombie(StatCharacter stat) : base(stat)
     {
-        sprite = Resources.Load<Sprite>("Pictures/Zombie");
+        Sprite = Resources.Load<Sprite>("Pictures/Zombie");
     }
     public override string GetDialogueLine()
     {

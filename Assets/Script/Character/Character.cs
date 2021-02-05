@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Character
 {
-    public Sprite sprite { get; protected set; }
-    public StatCharacter stat { get; protected set; }
+    public Sprite Sprite { get; protected set; }
+    public StatCharacter Stat { get; protected set; }
 
     public Character(StatCharacter stat)
     {
-        this.stat = stat;
-        sprite = null;
+        this.Stat = stat;
+        Sprite = null;
     }
     public virtual string GetDialogueLine()
     {

@@ -6,15 +6,15 @@ using UnityEngine.UI;
 public class MouseOver : MonoBehaviour
 {
     [SerializeField]
-    private GameObject OnClickTextPrefab;
+    private GameObject _onClickTextPrefab;
     [SerializeField]
-    private GameObject StatMenuPrefab;
+    private GameObject _statMenuPrefab;
     [SerializeField]
-    private Canvas canvas;
-    private GameObject currentStatMenu;
-    private GameObject currentOnClickText;
+    private Canvas _canvas;
+    private GameObject _currentStatMenu;
+    private GameObject _currentOnClickText;
 
-    private bool IsMouseOver = false;
+    private bool _isMouseOver = false;
 
     public ObjectType currentType = ObjectType.NONE;
     public Character currentCharacter;
@@ -22,27 +22,27 @@ public class MouseOver : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if (!IsMouseOver)
+        if (!_isMouseOver)
         {
-            IsMouseOver = true;
+            _isMouseOver = true;
             if (currentType == ObjectType.CHARACTER)
             {
-                currentStatMenu = Instantiate(StatMenuPrefab, canvas.transform);
-                currentStatMenu.transform.GetChild(0).GetComponent<Text>().text = (currentCharacter.stat.name + "\n"
-                                                                                   + "HP : " + currentCharacter.stat.hp + "\n"
-                                                                                   + "Stamina : " + currentCharacter.stat.stamina + "\n"
-                                                                                   + "Attack : " + currentCharacter.stat.attack + "\n"
-                                                                                   + "Defence : " + currentCharacter.stat.defense + "\n"
-                                                                                   + "Speed : " + currentCharacter.stat.speed).ToString(); 
+                _currentStatMenu = Instantiate(_statMenuPrefab, _canvas.transform);
+                _currentStatMenu.transform.GetChild(0).GetComponent<Text>().text = (currentCharacter.Stat.name + "\n"
+                                                                                   + "HP : " + currentCharacter.Stat.hp + "\n"
+                                                                                   + "Stamina : " + currentCharacter.Stat.stamina + "\n"
+                                                                                   + "Attack : " + currentCharacter.Stat.attack + "\n"
+                                                                                   + "Defence : " + currentCharacter.Stat.defense + "\n"
+                                                                                   + "Speed : " + currentCharacter.Stat.speed).ToString(); 
                 //Generator.Instance.LogCharacterStat();
             }
             else if (currentType == ObjectType.EQUIPMENT)
             {
-                currentStatMenu = Instantiate(StatMenuPrefab, canvas.transform);
-                currentStatMenu.transform.GetChild(0).GetComponent<Text>().text = (currentEquipment.stat.name + "\n"
-                                                                                   + currentEquipment.stat.marketValue + " Gold\n"
-                                                                                   + "Att : " + currentEquipment.stat.attackPower + "\n"
-                                                                                   + "Def : " + currentEquipment.stat.defensePower).ToString();
+                _currentStatMenu = Instantiate(_statMenuPrefab, _canvas.transform);
+                _currentStatMenu.transform.GetChild(0).GetComponent<Text>().text = (currentEquipment.Stat.name + "\n"
+                                                                                   + currentEquipment.Stat.marketValue + " Gold\n"
+                                                                                   + "Att : " + currentEquipment.Stat.attackPower + "\n"
+                                                                                   + "Def : " + currentEquipment.Stat.defensePower).ToString();
                 //Generator.Instance.LogEquipmentStat();
             }
         }
@@ -50,31 +50,31 @@ public class MouseOver : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (currentOnClickText != null)
+        if (_currentOnClickText != null)
         {
-            Destroy(currentOnClickText);
+            Destroy(_currentOnClickText);
         }
 
         if (currentType == ObjectType.CHARACTER)
         {
-            currentOnClickText = Instantiate(OnClickTextPrefab, canvas.transform);
-            currentOnClickText.transform.GetComponent<Text>().text = currentCharacter.GetDialogueLine();
+            _currentOnClickText = Instantiate(_onClickTextPrefab, _canvas.transform);
+            _currentOnClickText.transform.GetComponent<Text>().text = currentCharacter.GetDialogueLine();
         }
         else if (currentType == ObjectType.EQUIPMENT)
         {
-            currentOnClickText = Instantiate(OnClickTextPrefab, canvas.transform);
-            currentOnClickText.transform.GetComponent<Text>().text = currentEquipment.GetDescription();
+            _currentOnClickText = Instantiate(_onClickTextPrefab, _canvas.transform);
+            _currentOnClickText.transform.GetComponent<Text>().text = currentEquipment.GetDescription();
         }
 
-        Destroy(currentOnClickText, 2.0F);
+        Destroy(_currentOnClickText, 2.0F);
     }
 
 
     private void OnMouseExit()
     {
-        IsMouseOver = false;
-        Destroy(currentStatMenu);
-        Destroy(currentOnClickText);
+        _isMouseOver = false;
+        Destroy(_currentStatMenu);
+        Destroy(_currentOnClickText);
         //Debug.Log("Mouse Exit");
     }
 
